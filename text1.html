@@ -5,23 +5,27 @@
         *{margin: 0;padding: 0px;}
         .main{ 
         	width:800px;
+        	margin-left: 50px;
     	    display:inline-block;
     	    background-color: white;
-    	    border-width: 1px;
+    	    border-width: 2px;
             border-style: solid;
+            border-color: gray;
             font-family:"Times New Roman",Times,serif;
     	}
     	.first{
     		padding: 5px;
-    		border-color: black;
+    		border-color: gray;
+    		border-width: 1px;
+    		border-style: solid;
     		height: 30px;
     		background-color: lightgray;
+    		padding-right: 10px;	
     	}
     	.second{
     		padding: 5px;
     		border-bottom-color: black;
     		border-bottom-width: 2px;
-    		text-align: left;
     		height: 100px;
     	}
     	.second1{
@@ -31,96 +35,128 @@
     		text-align: left;
     		background-color: white;
     	    width: 700px;
+    	    height: 50px;
+    	    margin-left: 30px;
     	}
-    	.second2{border-width: thin;float: right;}
-    	time{float: right;}
+    	.second2{
+    		position: static ;
+    		margin-right:10px;
+    		margin-top: 5px;
+    		float: right;
+    		border-width: thin;
+    		}
+    	.line{
+    		font-color: lightgray;
+    		width: 780px;
+    		margin:0 auto;
+    	}
+    	.line1{
+    		display: inline-block;
+    		width: 700px;
+    		font-color: lightgray;
+    	}
+    	header{float: right;color: blue;}
+    	sub{font-size: 80%;float:right;}
+    	time{float: right;font-weight: normal;font-size: 60%;padding-right: 10px;}
     	span{color: blue;}
     	img{float: left;}
 		h2{float: left;}
-		header{float: right;}
 	</style>
 </head>
 <body>
 	<div class="main">
 		<div class="first">
 			<h2>Recent History</h2>
-			<header>All History &nu;</header>
+			<sub>All History &nu;</sub>
 		</div>
 		<div class="second">
-			<div class="second1">
 	        <img src="1.png">
-			<h3> Chris,Peng add Note <span>1/29/2018 Sprint Summary</span>
+			<h3>&nbsp;Chris,Peng add Note <span>1/29/2018 Sprint Summary</span> 	<sub><time>07:31 PM</time></sub>
             </h3>
+            <div class="second1">
             <p>Developers make sure that finish all new feature development and critical issue fixing and merge all code to master branch at this...
             </p>
             </div>
             <div class="second2">
-            	<sup><time>07:31 PM</time></sup>
-            	<img src="7.png">
+            	<img src="7.png"><br>
             </div>
 		</div>
+		<br>
+		<div class="line">
+		 	<hr>
+		 </div>
 		<div class="second">
-			<div class="second1">
 			<img src="2.png">
-			<h3>Chris,Peng updated Meeting <span>KKKKK</span></h3>
+			<h3>&nbsp;Chris,Peng updated Meeting <span>KKKKK</span>  <sub><time>07:31 PM</time></sub></h3>
+		    <div class="second1">
             <p>status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma</p>
 		    </div>
 		    <div class="second2">
-		    <sup><time>07:31 PM</time></sup>
-		    <img src="7.png">
+		    <img src="7.png"><br>
 		    </div>
 	    </div>
+	    <br>
+	    <div class="line">
+		 	<hr>
+		</div>
 		<div class="second">
-			<div class="second1">
 			<img src="3.png">
-			<h3>Chirs,Peng updated Document<span>KKKKK.jpg</span></h3>
+			<h3>&nbsp;Chirs,Peng updated Document <span>KKKKK.jpg</span>  <sup><time>07:31 PM</time></sup></h3>
+			<div class="second1">
 			<p><img src="6.png"></p>
 		    </div>
 			<div class="second2">
-		    	<sup><time>07:31 PM</time></sup>
-		    	<img src="7.png">
+		    	<img src="7.png"><br>
 		    </div>
 		 </div>
-		 <hr>
+		 <br>
+		 <div class="line">
+		 <div class="line1">
+		 	<hr>  </div>
+		 	<header>Yesterday</header>
+		 </div>
+		 <br>
 		 <div class="second">
-			<div class="second1">
 			<img src="4.png">
-			<h3>Chirs,Peng received an email from:<em>allen@yhlsoft.com</em></h3>
+			<h3>&nbsp;Chirs,Peng received an email from:<em>allen@yhlsoft.com</em>  <sup><time>07:31 PM</time></sup></h3>
+			<div class="second1">
 			<p>Re:Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
 			<div class="second2">
-		    	<sup><time>07:31 PM</time></sup>
 		    	<img src="8.png">
 		    </div>
 		 </div>
-		 <div class="second">
-			<div class="second1">
-			<img src="5.png">
-			<h3>Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em></h3>
-			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
-		    </div>
-			<div class="second2">
-		    	<sup><time>07:31 PM</time></sup>
-		    </div>
+		 <br>
+		 <div class="line">
+		 	<hr>
 		 </div>
 		 <div class="second">
-			<div class="second1">
 			<img src="5.png">
-			<h3>Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em></h3>
+			<h3>&nbsp;Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em>  <sup><time>07:31 PM</time></sup></h3>
+			<div class="second1">
 			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
-		    </div>
-			<div class="second2">
-		    	<sup><time>07:31 PM</time></sup>
 		    </div>
 		 </div>
+		 <br>
+		 <div class="line">
+		 	<hr>  
+		 </div>
 		 <div class="second">
-			<div class="second1">
 			<img src="5.png">
-			<h3>Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em></h3>
+			<h3>&nbsp;Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em>  <sup><time>07:31 PM</time></sup></h3>
+			<div class="second1">
 			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
-			<div class="second2">
-		    	<sup><time>07:31 PM</time></sup>
+		 </div>
+		 <br>
+		 <div class="line">
+		 	<hr>
+		 </div>
+		 <div class="second">
+			<img src="5.png">
+			<h3>&nbsp;Chirs,Peng sent an email to:<em>allen@yhlsoft.com</em>  <sup><time>07:31 PM</time></sup></h3>
+			<div class="second1">
+			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
 		 </div>
 	</div>

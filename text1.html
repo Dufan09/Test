@@ -6,13 +6,13 @@
       
         .main{ 
         	width: 800px;
-        	margin: 100px;
+        	margin-left: 100px;
     	    display:inline-block;
     	    background-color: white;
     	    border-width: 1.5px;
             border-style: solid;
             border-color: #D2D6D4;
-            font-family:"Times New Roman",Times,serif;
+            font-family:"Microsoft YaHei",Times,serif;
             font-size: normal;
     	}
     	.five{
@@ -44,6 +44,7 @@
     	    height: 40px;
     	    margin-left: 30px;
     	    padding-left: 10px;
+    	    color: #949494;
     	}
     	.second2{
     		position: static ;
@@ -54,33 +55,37 @@
     		}
     	.line{
     		font-color: #E8EDEB;
+    		font-size: 80%;
     		width: 725px;
     		margin:0 auto;
-    		border-color: white;
+    		border-bottom-color: #D2D6D4;
     	}
     	.line1{
     		display: inline-block;
-    		width: 650px;
-    		font-color: #D2D6D4;
+    		width: 640px;
+    		font-color: #6DBBF2;
     	}
-        .dropdown-content{display: none;width: 5px;height: 5px;border-color: none;}
-        .dropdown:hover .dropdown-content {display: block;border-color: none;}
+        .dropdown-content{display: none;height: 5px;border-color: #A7A8A8;clear: both; }
+        .dropdown:hover .dropdown-content {display: block;border-color: #A7A8A8;}
+        .dropbtn{border-color:#A7A8A8;border-width: 0;}
     	text{float: right;color: #279DF2;margin-right: 5px;}
-    	header{font-size: 120%;
+    	header{font-size: 80%;
     		position: static;
     		margin-top: 20px;
-    		margin-right: 25px;
+    		margin-right: 45px;
+    		color: #A7A8A8;
     		float:right;}
-    	time{float: right;font-weight: normal;font-size: 60%;padding-right: 10px;}
+    	time{float: right;font-weight: normal;font-size: 60%;padding-right: 10px;color: #A7A8A8;}
     	span{color: #49ACF2;font-weight: bold;}
     	img{float: left;border-color: white;}
-		h2{float: left;padding-left: 30px;margin-top: 15px;}
-		h3{font-weight: normal;padding: 5px;}
+		h2{float: left;padding-left: 30px;margin-top: 15px;color: #737373;}
+		h3{font-weight: normal;padding: 5px;color: #737373;}
 		.dropdown{
             display: block;
     		width: 5px; 
     		float: right; 
-    		border-color: none;		
+    		border-color: none;	
+    		clear: both;	
         }
 	</style>
 </head>
@@ -90,10 +95,9 @@
 			<h2>Recent History</h2>
 			<header>All History&nbsp;&nbsp;
 			<div class="dropdown">
-                <button class="dropbtn"><font color="black" size="1px"><content>&nu;</content></font></button>
+                <font color="#D2D6D4"><button class="dropbtn"><font color="#B8BCBF" size="1px"><content>&nu;</content></font></button></font>
                 <div class="dropdown-content">
-                <p>Today</p>
-                <p>Yesterday</p>
+                <font size="2px"><p>Today<br>Yesterday</p></font>
 		        </div>
 		    </div>
 		    </header>
@@ -101,7 +105,7 @@
 		<div class="five">
 		<div class="second">
 	        <img src="1.png">
-			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span> 	<time>07:31 PM</time></sub>
+			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span> <sub><time>07:31 PM</time></sub>
             </h3>
             <div class="second1">
             <p>Developers make sure that finish all new feature development and critical issue fixing and merge all code to master branch at this...</p>
@@ -168,7 +172,7 @@
 		 </div>
 		 <br>
 		 <div class="line">
-		 	<hr>  
+		 	 <hr>
 		 </div>
 		 <div class="second">
 			<img src="5.png">
@@ -179,7 +183,7 @@
 		 </div>
 		 <br>
 		 <div class="line">
-		 	<hr>
+		    <hr>
 		 </div>
 		 <div class="second">
 			<img src="5.png">

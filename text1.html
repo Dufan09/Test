@@ -2,7 +2,7 @@
 <head>
 	<title>Recent History</title>
 	<style type="text/css">
-        *{margin: 0;padding: 0px;background-color: #C4E0F5；}
+        *{margin: 0;padding: 0px;}
       
         .main{ 
         	width: 800px;
@@ -52,7 +52,7 @@
     		margin-top: 5px;
     		float: right;
     		border-width: thin;
-    		}
+    	}
     	.line{
     		font-color: #E8EDEB;
     		font-size: 80%;
@@ -63,26 +63,60 @@
     	.line1{
     		display: inline-block;
     		width: 640px;
-    		font-color: #6DBBF2;
+    		color: #6DBBF2;
     	}
-        .dropdown-content{display: none;height: 5px;border-color: #A7A8A8;clear: both; }
-        .dropdown:hover .dropdown-content {display: block;border-color: #A7A8A8;}
-        .dropbtn{border-color:#A7A8A8;border-width: 0;}
-    	text{float: right;color: #279DF2;margin-right: 5px;}
-    	header{font-size: 80%;
+        .dropdown-content{
+        	display: none;
+        	height: 5px;
+        	clear: both;
+        }
+        .dropdown:hover .dropdown-content {
+        	display: block;
+        }
+        .dropbtn{
+        	border-width: 0;
+        }
+    	text{
+    		float: right;
+    		color: #279DF2;
+    		margin-right: 5px;
+    	}
+    	header{
+    		font-size: 100%;
     		position: static;
-    		margin-top: 20px;
+    		margin-top: 23px;
     		margin-right: 45px;
+    		color: #949494;
+    		float:right;
+    	}
+    	time{
+    		float: right;
+    		font-weight: normal;
+    		font-size: 60%;
+    		padding-right: 10px;
     		color: #A7A8A8;
-    		float:right;}
-    	time{float: right;font-weight: normal;font-size: 60%;padding-right: 10px;color: #A7A8A8;}
-    	span{color: #49ACF2;font-weight: bold;}
-    	img{float: left;border-color: white;}
-		h2{float: left;padding-left: 30px;margin-top: 15px;color: #737373;}
-		h3{font-weight: normal;padding: 5px;color: #737373;}
+    	}
+    	span{
+    		color: #49ACF2;
+    		font-weight: bold;
+    	}
+    	img{
+    		float: left;
+    		border-color: white;
+    	}
+		h2{
+			float: left;
+			padding-left: 30px;
+			margin-top: 12px;
+			color: #737373;
+		}
+		h3{
+			font-weight: normal;
+			padding: 5px;
+			color: #737373;
+		}
 		.dropdown{
             display: block;
-    		width: 5px; 
     		float: right; 
     		border-color: none;	
     		clear: both;	
@@ -93,11 +127,12 @@
 	<div class="main">
 		<div class="first">
 			<h2>Recent History</h2>
-			<header>All History&nbsp;&nbsp;
+			<header>
 			<div class="dropdown">
-                <font color="#D2D6D4"><button class="dropbtn"><font color="#B8BCBF" size="1px"><content>&nu;</content></font></button></font>
+                <font color="#D2D6D4"><button class="dropbtn">
+                <font color="#949494" size="1px"><content>All History&nbsp;&nbsp;&nu;&nbsp;</content></font></button></font>
                 <div class="dropdown-content">
-                <font size="2px"><p>Today<br>Yesterday</p></font>
+                <font size="1.5px"><p>Today<br>Yesterday</p></font>
 		        </div>
 		    </div>
 		    </header>
@@ -105,10 +140,12 @@
 		<div class="five">
 		<div class="second">
 	        <img src="1.png">
-			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span> <sub><time>07:31 PM</time></sub>
+			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span>
+			<sub><time>07:31 PM</time></sub>
             </h3>
             <div class="second1">
-            <p>Developers make sure that finish all new feature development and critical issue fixing and merge all code to master branch at this...</p>
+            <p>Developers make sure that finish all new feature development and critical issue fixing 
+            and merge all code to master branch at this...</p>
             </div>
             <div class="second2">
             	<img src="7.png"><br>
@@ -120,7 +157,8 @@
 		 </div>
 		<div class="second">
 			<img src="2.png">
-			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> updated <b>Meeting</b> <span>KKKKK</span>  <sub><time>07:31 PM</time></sub></h3>
+			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> updated <b>Meeting</b> <span>KKKKK</span>  
+				<sub><time>07:31 PM</time></sub></h3>
 		    <div class="second1">
             <p>status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma</p>
 		    </div>
@@ -134,7 +172,8 @@
 		</div>
 		<div class="second">
 			<img src="3.png">
-			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> updated Document <span>KKKKK.jpg</span>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> updated Document <span>KKKKK.jpg</span>  
+				<sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p><img src="6.png"></p>
 		    </div>
@@ -151,9 +190,11 @@
 		 </div>
 		 <div class="second">
 			<img src="4.png">
-			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> received an email from:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> received an email from:<b>allen@yhlsoft.com</b>  
+				<sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
-			<p>Re:Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
+			<p>Re:Now US Release plan-staging need support people to help testing Added new showstopper 
+			issuses for staging,the big issue is that mang...</p>
 		    </div>
 			<div class="second2">
 		    	<img src="8.png">
@@ -165,9 +206,11 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  
+				<sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
-			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
+			<p>Now US Release plan-staging need support people to help testing Added new showstopper 
+			issuses for staging,the big issue is that mang...</p>
 		    </div>
 		 </div>
 		 <br>
@@ -176,9 +219,11 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  
+				<sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
-			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
+			<p>Now US Release plan-staging need support people to help testing Added new showstopper 
+			issuses for staging,the big issue is that mang...</p>
 		    </div>
 		 </div>
 		 <br>
@@ -187,9 +232,11 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  
+				<sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
-			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
+			<p>Now US Release plan-staging need support people to help testing Added new showstopper 
+			issuses for staging,the big issue is that mang...</p>
 		    </div>
 		 </div>
 		</div>

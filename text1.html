@@ -2,42 +2,48 @@
 <head>
 	<title>Recent History</title>
 	<style type="text/css">
-        *{margin: 0;padding: 0px;}
+        *{margin: 0;padding: 0px;background-color: #C4E0F5；}
+      
         .main{ 
-        	width:800px;
-        	margin-left: 200px;
+        	width: 800px;
+        	margin: 100px;
     	    display:inline-block;
     	    background-color: white;
-    	    border-width: 1px;
+    	    border-width: 1.5px;
             border-style: solid;
-            border-color: gray;
+            border-color: #D2D6D4;
             font-family:"Times New Roman",Times,serif;
             font-size: normal;
     	}
+    	.five{
+    		padding-left: 30px;
+            padding-right: 30px;
+            background-color: white;
+        }
     	.first{
     		padding: 5px;
-    		border-color: gray;
+    		border-color: #D2D6D4;
     		border-width: 1px;
     		border-style: solid;
-    		height: 30px;
-    		background-color: lightgray;
+    		height: 50px;
+    		background-color: #E8EDEB;
     		padding-right: 10px;	
+            font-size: 80%;
+            clear: padding-left;
     	}
     	.second{
     		padding: 5px;
     		border-bottom-color: black;
     		border-bottom-width: 2px;
-    		height: 80px;
     	}
     	.second1{
     		padding: 5px;
-    		border-bottom-color: black;
-    		border-bottom-width: 2px;
     		text-align: left;
     		background-color: white;
-    	    width: 700px;
+    	    width: 600px;
     	    height: 40px;
     	    margin-left: 30px;
+    	    padding-left: 10px;
     	}
     	.second2{
     		position: static ;
@@ -47,37 +53,55 @@
     		border-width: thin;
     		}
     	.line{
-    		font-color: lightgray;
-    		width: 780px;
+    		font-color: #E8EDEB;
+    		width: 725px;
     		margin:0 auto;
+    		border-color: white;
     	}
     	.line1{
     		display: inline-block;
-    		width: 700px;
-    		font-color: gray;
+    		width: 650px;
+    		font-color: #D2D6D4;
     	}
-    	text{float: right;color: blue;margin-right: 5px;}
-    	header{font-size: 80%;
+        .dropdown-content{display: none;width: 5px;height: 5px;border-color: none;}
+        .dropdown:hover .dropdown-content {display: block;border-color: none;}
+    	text{float: right;color: #279DF2;margin-right: 5px;}
+    	header{font-size: 120%;
     		position: static;
-            margin-right: 5px;
-            margin-top: 6px;
+    		margin-top: 20px;
+    		margin-right: 25px;
     		float:right;}
     	time{float: right;font-weight: normal;font-size: 60%;padding-right: 10px;}
-    	span{color: blue;font-weight: bold;}
-    	img{float: left;}
-		h2{float: left;}
-		h3{font-weight: normal;}
+    	span{color: #49ACF2;font-weight: bold;}
+    	img{float: left;border-color: white;}
+		h2{float: left;padding-left: 30px;margin-top: 15px;}
+		h3{font-weight: normal;padding: 5px;}
+		.dropdown{
+            display: block;
+    		width: 5px; 
+    		float: right; 
+    		border-color: none;		
+        }
 	</style>
 </head>
 <body>
 	<div class="main">
 		<div class="first">
 			<h2>Recent History</h2>
-			<header>All History &nu;</header>
+			<header>All History&nbsp;&nbsp;
+			<div class="dropdown">
+                <button class="dropbtn"><font color="black" size="1px"><content>&nu;</content></font></button>
+                <div class="dropdown-content">
+                <p>Today</p>
+                <p>Yesterday</p>
+		        </div>
+		    </div>
+		    </header>
 		</div>
+		<div class="five">
 		<div class="second">
 	        <img src="1.png">
-			<h3>&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span> 	<time>07:31 PM</time></sub>
+			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> add <b>Note</b> <span>1/29/2018 Sprint Summary</span> 	<time>07:31 PM</time></sub>
             </h3>
             <div class="second1">
             <p>Developers make sure that finish all new feature development and critical issue fixing and merge all code to master branch at this...</p>
@@ -92,7 +116,7 @@
 		 </div>
 		<div class="second">
 			<img src="2.png">
-			<h3>&nbsp;<strong>Chris,Peng</strong> updated <b>Meeting</b> <span>KKKKK</span>  <sub><time>07:31 PM</time></sub></h3>
+			<h3>&nbsp;&nbsp;<strong>Chris,Peng</strong> updated <b>Meeting</b> <span>KKKKK</span>  <sub><time>07:31 PM</time></sub></h3>
 		    <div class="second1">
             <p>status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma</p>
 		    </div>
@@ -106,7 +130,7 @@
 		</div>
 		<div class="second">
 			<img src="3.png">
-			<h3>&nbsp;<b>Chirs,Peng</b> updated Document <span>KKKKK.jpg</span>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> updated Document <span>KKKKK.jpg</span>  <sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p><img src="6.png"></p>
 		    </div>
@@ -116,14 +140,14 @@
 		 </div>
 		 <br>
 		 <div class="line">
-		 <div class="line1">
-		 	<hr>  </div>
+		    <div class="line1">
+		 	<hr>
+		    </div>
 		 	<text>Yesterday</text>
 		 </div>
-		
 		 <div class="second">
 			<img src="4.png">
-			<h3>&nbsp;<b>Chirs,Peng</b> received an email from:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> received an email from:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p>Re:Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
@@ -137,7 +161,7 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
@@ -148,7 +172,7 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
@@ -159,10 +183,11 @@
 		 </div>
 		 <div class="second">
 			<img src="5.png">
-			<h3>&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
+			<h3>&nbsp;&nbsp;<b>Chirs,Peng</b> sent an email to:<b>allen@yhlsoft.com</b>  <sup><time>07:31 PM</time></sup></h3>
 			<div class="second1">
 			<p>Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang...</p>
 		    </div>
 		 </div>
+		</div>
 	</div>
 </body>

@@ -8,7 +8,7 @@
         	margin-left: 20px;
             width: 800px;
     	    border: 1px solid #DEE2EA;
-            font-family:"Microsoft YaHei",Times,serif;
+            font-family:"Microsoft YaHei";
             color: black;
     	}
     	.first{
@@ -38,6 +38,10 @@
         .m_body{
             padding: 5px 100px 0 0;
         }
+        #m_body_3{
+            padding-left: 10px;
+            padding-top: 10px;
+        }
         .H_picture{
             float: left;
         }
@@ -64,15 +68,15 @@
         }
     	header{
     		position:relative;
-    		padding-top: 15px;
-    		padding-right: 50px;
+    		padding-top: 20px;
+    		padding-right: 20px;
     		float:right;
             font-size: 80%;
     	}
         h2{
             float: left;
-            padding-top: 8px;
-            padding-left: 30px;
+            padding-top: 10px;
+            padding-left: 35px;
             color: #737373;
             font-size: 130%;
         }
@@ -100,6 +104,24 @@
             color: #49ACF2;
             font-size: 80%;
         }
+        .dropdown-content{
+            display: none;
+            height: 5px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropbtn{
+            text-align: right;
+            border-width: 0px;
+            background-color:#F4F5F8;
+            color: #737373;
+        }
+        .dropdown{
+            display: block;
+            float: right;   
+            clear: both;    
+        }
     </style>
 </head>
 <body>
@@ -107,7 +129,13 @@
 		<div class="first">
 			<h2>Recent History</h2>
 			<header>
-                <p>All History <img src="11.png"> </p>
+               <div class="dropdown">
+                <button class="dropbtn">
+                <font size="2px"><p>All History <img src="11.png"></p></font></button>
+                <div class="dropdown-content">
+                <p>Today<br>Yesterday</p>
+                </div>
+            </div>
 		    </header>
 		</div>
         <div class="L_content">
@@ -115,9 +143,9 @@
 		<li><div class="M_content">
 	        <img class="H_picture" src="1.png">
 			<div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span> <span class="acction"> add</span><span class="theme"> Note</span><span class="mainpoint"> 1/29/2018 Sprint Summary</span><time>07:31 PM</time></p>
+                <p class="C_Header"><span class="username" id="username_1"> Chris,Peng</span> <span class="action" id="action_1"> add</span><span class="theme" id="theme_1"> Note</span><span class="mainpoint" id="mainpoint_1"> 1/29/2018 Sprint Summary</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">Developers make sure that finish all new feature development and critical issue fixing 
+                <p class="m_body" id="m_body_1">Developers make sure that finish all new feature development and critical issue fixing 
                 and merge all code to master branch at this...</p>
                 <br>
                 <img class="E_picture" src="7.png">
@@ -129,9 +157,9 @@
         <li><div class="M_content">
             <img class="H_picture" src="2.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span><span class="acction"> updated</span><span class="theme"> Meeting</span> <span class="mainpoint">KKKKK</span><time>07:31 PM</time></p>
+                <p class="C_Header" ><span class="username" id="username_2"> Chris,Peng</span><span class="action" id="action_2"> updated</span><span class="theme" id="theme_2"> Meeting</span> <span class="mainpoint" id="mainpoint_2">KKKKK</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma</p>
+                <p class="m_body" id="m_body_2">status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma</p>
                 </div>
             </div><br>
             <img class="E_picture" src="7.png">
@@ -141,9 +169,9 @@
         <li><div class="M_content">
             <img class="H_picture" src="3.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span><span class="acction"> updated</span><span class="theme"> Document </span><span class="mainpoint">KKKKK.jpg</span><time>07:31 PM</time></p>
+                <p class="C_Header"><span class="username" id="username_3"></span><span class="action" id="action_3"> updated</span><span class="theme" id="theme_3"> Document </span><span class="mainpoint" id="mainpoint_3">KKKKK.jpg</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body"><img src="6.png"></p>
+                <p class="m_body" id="m_body_3"><img src="6.png"></p>
                 </div>
             </div>
             <img class="E_picture" src="7.png">
@@ -158,9 +186,9 @@
         <li><div class="M_content">
             <img class="H_picture" src="4.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span><span class="acction"> sent</span> an email to:<span class="email_from">allen@yhlsoft.com</span><time>07:31 PM</time></p>
+                <p class="C_Header" id="f_email4"><span class="username" id="username_4"> Chris,Peng</span><span class="action" id="action_4"> sent</span><span id="theme_4"> an email to:</span><span class="email_from" id="mainpoint_4">allen@yhlsoft.com</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">Now US Release plan-staging need support people to help testing Added new showstopper 
+                <p class="m_body" id="m_body_4">Now US Release plan-staging need support people to help testing Added new showstopper 
             issuses for staging,the big issue is that mang...</p>
                 </div>
             </div><br>
@@ -171,9 +199,9 @@
         <li><div class="M_content">
             <img class="H_picture" src="4.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span> sent an email to:<span class="email_from">allen@yhlsoft.com</span><time>07:31 PM</time></p>
+                <p class="C_Header"><span class="username" id="username_5"> Chris,Peng</span><span class="action" id="action_5"> sent</span><span id="theme_5"> an email to:</span><span class="email_from" id="mainpoint_5">allen@yhlsoft.com</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">Now US Release plan-staging need support people to help testing Added new showstopper 
+                <p class="m_body" id="m_body_5">Now US Release plan-staging need support people to help testing Added new showstopper 
             issuses for staging,the big issue is that mang...</p>
                 </div>
             </div><br>
@@ -183,9 +211,9 @@
         <li><div class="M_content">
             <img class="H_picture" src="4.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span> sent an email to:<span class="email_from">allen@yhlsoft.com</span><time>07:31 PM</time></p>
+                <p class="C_Header"><span class="username" id="username_6"> Chris,Peng</span><span id="action_6"> sent</span><span id="theme_6"> an email to:</span><span class="email_from" id="mainpoint_6">allen@yhlsoft.com</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">Now US Release plan-staging need support people to help testing Added new showstopper 
+                <p class="m_body" id="m_body_6">Now US Release plan-staging need support people to help testing Added new showstopper 
             issuses for staging,the big issue is that mang...</p>
                 </div>
             </div><br>
@@ -195,15 +223,116 @@
         <li><div class="M_content">
             <img class="H_picture" src="4.png">
             <div class="contentarea">
-                <p class="C_Header"><span class="username"> Chris,Peng</span> sent an email to:<span class="email_from">allen@yhlsoft.com</span><time>07:31 PM</time></p>
+                <p class="C_Header"><span class="username" id="username_7"> Chris,Peng</span><span id="action_7"> sent</span><span id="theme_7"> an email to:</span><span class="email_from" id="mainpoint_7">allen@yhlsoft.com</span><time>07:31 PM</time></p>
                 <div class="P_content">
-                <p class="m_body">Now US Release plan-staging need support people to help testing Added new showstopper 
+                <p class="m_body" id="m_body_7">Now US Release plan-staging need support people to help testing Added new showstopper 
             issuses for staging,the big issue is that mang...</p>
                 </div>
             </div><br>
         </div>
         </li>
         </ul>
+        <div id="pic"></div>
     </div>
+</div>
 </body>
+
+<script type="text/javascript">
+    var info={
+        "data":[
+           {
+            "username":"Chirs,Peng",
+            "action_a":"add",
+            "theme":" Note",
+            "mainpoint":" 1/29/2018 Sprint Summary",
+            "m_body":"Developers make sure that finish all new feature development and critical issue fixing and merge all code to master branch at this..."
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" updated",
+            "theme":" Meeting",
+            "mainpoint":" KKKKK",
+            "m_body":"status on 2018/03/09 11:00 AM and assign to Outlook Ying,ting ma"
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" sent",
+            "theme":" Document",
+            "mainpoint":" KKKKK.jpg",
+            "m_body":"<img src='6.png'>"
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" received",
+            "theme":" an email to:",
+            "mainpoint":" allen@yhlsoft.com",
+            "m_body":"Re:Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang..."
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" sent",
+            "theme":" an email to:",
+            "mainpoint":" allen@yhlsoft.com",
+            "m_body":"Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang..."
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" sent",
+            "theme":"an email to:",
+            "mainpoint":" allen@yhlsoft.com",
+            "m_body":"Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang..."
+           },
+           {
+            "username":"Chirs,Peng",
+            "action_a":" sent",
+            "theme":" an email to:",
+            "mainpoint":" allen@yhlsoft.com",
+            "m_body":"Now US Release plan-staging need support people to help testing Added new showstopper issuses for staging,the big issue is that mang..."
+           }
+        ]
+    };
+
+    document.getElementById("username_1").innerHTML=info.data[0].username;
+    document.getElementById("action_1").innerHTML=info.data[0].action_a;
+    document.getElementById("theme_1").innerHTML=info.data[0].theme;
+    document.getElementById("mainpoint_1").innerHTML=info.data[0].mainpoint;
+    document.getElementById("m_body_1").innerHTML=info.data[0].m_body;
+
+    document.getElementById("username_2").innerHTML=info.data[1].username;
+    document.getElementById("action_2").innerHTML=info.data[1].action_a;
+    document.getElementById("theme_2").innerHTML=info.data[1].theme;
+    document.getElementById("mainpoint_2").innerHTML=info.data[1].mainpoint;
+    document.getElementById("m_body_2").innerHTML=info.data[1].m_body;
+
+    document.getElementById("username_3").innerHTML=info.data[2].username;
+    document.getElementById("action_3").innerHTML=info.data[2].action_a;
+    document.getElementById("theme_3").innerHTML=info.data[2].theme;
+    document.getElementById("mainpoint_3").innerHTML=info.data[2].mainpoint;
+    document.getElementById("m_body_3").innerHTML=info.data[2].m_body;
+
+    document.getElementById("username_4").innerHTML=info.data[3].username;
+    document.getElementById("action_4").innerHTML=info.data[3].action_a;
+    document.getElementById("theme_4").innerHTML=info.data[3].theme;
+    document.getElementById("mainpoint_4").innerHTML=info.data[3].mainpoint;
+    document.getElementById("m_body_4").innerHTML=info.data[3].m_body;
+
+    document.getElementById("username_5").innerHTML=info.data[4].username;
+    document.getElementById("action_5").innerHTML=info.data[4].action_a;
+    document.getElementById("theme_5").innerHTML=info.data[4].theme;
+    document.getElementById("mainpoint_5").innerHTML=info.data[4].mainpoint;
+    document.getElementById("m_body_5").innerHTML=info.data[4].m_body;
+
+    document.getElementById("username_6").innerHTML=info.data[5].username;
+    document.getElementById("action_6").innerHTML=info.data[5].action_a;
+    document.getElementById("theme_6").innerHTML=info.data[5].theme;
+    document.getElementById("mainpoint_6").innerHTML=info.data[5].mainpoint;
+    document.getElementById("m_body_6").innerHTML=info.data[5].m_body;
+
+    document.getElementById("username_7").innerHTML=info.data[6].username;
+    document.getElementById("action_7").innerHTML=info.data[6].action_a;
+    document.getElementById("theme_7").innerHTML=info.data[6].theme;
+    document.getElementById("mainpoint_7").innerHTML=info.data[6].mainpoint;
+    document.getElementById("m_body_7").innerHTML=info.data[6].m_body;
+
+</script>
 </html>

@@ -25,7 +25,7 @@ var info = [{
         "action_a": " sent",
         "theme": " Document",
         "mainpoint": " KKKKK.jpg",
-        "m_body": "6.png",
+        "body_picture": "6.png",
         "time": "07:31 PM",
         "r_picture":"7.png"
     } ]
@@ -105,14 +105,10 @@ function fillInDlg(data, dlgRoot) {
             $(".theme", $dataTml).text(curCellData.theme);
             $(".mainpoint", $dataTml).text(curCellData.mainpoint);
             $(".emailfrom", $dataTml).text(curCellData.emailfrom);
+            $(".m_body", $dataTml).text(curCellData.m_body);
             $(".time", $dataTml).text(curCellData.time);
             $(".E_picture",$dataTml).attr("src",curCellData.r_picture);
-            if (i==0&&j==2) {
-                $(".c_picture",$dataTml).attr("src",curCellData.m_body)
-            }
-            else{
-                $(".m_body", $dataTml).text(curCellData.m_body)
-            }
+            $(".c_picture",$dataTml).attr("src",curCellData.body_picture);
         }  
         if (i==0) {
             var t_line='<div class="line1"></div>\

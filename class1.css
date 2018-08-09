@@ -16,21 +16,20 @@ color: #737373;
 .content{
 padding-left: 30px;
 padding-right: 30px;
-font-size: 110%;
+font-size: 80%;
 }
 .section{
 padding: 10px 0 0 0;
 font-size: 80%;
 }
-.item{
-padding: 10px 0;
+.item_header{
+padding: 5px 0;
 }
 .itype{
 float: left;
 }
 .contentarea{
 padding-left: 5px;
-margin-left: 38px;
 }
 .C_Header{
 padding:  2px 0;
@@ -40,20 +39,25 @@ color: #737373;
 .username, .theme{
 font-weight: bold;
 }
+.username{
+padding-left: 5px;
+}
 .mainpoint{
 color: #49ACF2;
 font-weight: bold;
 }
 .time{
-position: relative;
-margin-top: 2px;
+position:relative;
+padding-top: 2px;
+padding-right: 20px;
 float: right;
+margin-top: 2px;
 color: #A7A8A8;
 font-size: 70%;
-font-weight: normal;
 }
-.item_content{
-text-align: left;
+.m_body{
+display: block;
+padding-left: 35px;
 padding-top: 5px;
 padding-right: 150px;
 color: #949494;
@@ -61,7 +65,7 @@ color: #949494;
 .E_picture{
 position: relative;
 margin-right: 10px;
-margin-top: -15px;
+margin-top: -20px;
 float: right;
 }
 .emailfrom{
@@ -83,14 +87,13 @@ border-bottom:1px solid #F6F6F6;
 }
 .line1{
 display: inline-block;
-width: 675px;
+width: 670px;
 border-bottom: 1px solid #DEE2EA;
 }
 .line_text{
 position: absolute;
-padding-top: 7px;
+padding-top: 4px;
 color: #49ACF2;
-font-size: 80%;
 }
 ul{
 list-style-type: none;

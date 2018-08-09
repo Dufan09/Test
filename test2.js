@@ -65,7 +65,6 @@ var info = [{
         "r_picture":"8.png"
     }]
 }]
-var l_text = "Yesterday"
 
 function fillInDlg(data, dlgRoot) {
     var $content = $('.content', dlgRoot);
@@ -110,7 +109,7 @@ function fillInDlg(data, dlgRoot) {
             $(".E_picture",$dataTml).attr("src",curCellData.r_picture);
             $(".c_picture",$dataTml).attr("src",curCellData.body_picture);
         }  
-        if (i==0) {
+        if (i<len-1) {
             var t_line='<div class="line1"></div>\
                         <span class="line_text"></span>'
             var $cutline=$(t_line).appendTo($content);

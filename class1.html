@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="class1.css">
+		<script type="text/javascript" src='./jquery-3.3.1.min.js'>
+		</script>
+		<style type="text/css">
+			li{list-style-type: none;}
+		</style>
+	</head>
+	<body>
+		<div class="dialog">
+			<div class="header">
+				<h2>Recent History</h2>
+				<div class="r_header">
+					<p>All History <img src="11.png"></p>
+				</div>
+			</div>
+			<div class ="content">
+				<div id ="section" >
+					<ul class="item_header" v-for='todo in todos'>
+						<li>
+							<img v-bind:src="todo.H_picture" class="itype">
+							<span class="username">
+								{{todo.username}}
+							</span>
+							<span class="action">
+								{{todo.action_a}}
+							</span>
+							<span class="theme">
+								{{todo.theme}}
+							</span>
+							<span class="mainpoint">
+								{{todo.mainpoint}}
+							</span>
+							<span class="emailfrom">
+								{{todo.emailfrom}}
+							</span>
+							<span class="time">
+								{{todo.time}}
+							</span>
+							<span class="m_body">
+								{{todo.m_body}}
+								<img v-bind:src="todo.body_picture" class="body_picture">
+							</span><br>
+							<img v-bind:src="todo.r_picture" class="E_picture">
+						</li>
+						<div v-if='todo.seen===true' >
+							<div class="line1"></div>
+							<span class="line_text">Yesterday</span>
+						</div>
+						<div  v-else-if='todo.seen===false' class="line0"></div>
+					</ul>
+				</div>
+			</div>
+			<script src="./vue.js"></script>
+			<script type="text/javascript" src="./class1.js"></script>
+		</body>
+	</html>

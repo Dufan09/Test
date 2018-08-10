@@ -15,47 +15,41 @@
 			<div class="header">
 				<h2>Recent History</h2>
 				<div class="r_header">
-					<p>All History <img src="11.png"></p>
+					<button class="dropbtn">
+					<p>All History <img src="Date/11.png"></p>
+					</button>
+					<div class="dropdown-content">
+						<p>Today<br>Yesterday</p>
+					</div>
 				</div>
 			</div>
 			<div class ="content">
 				<div id ="section" >
 					<ul class="item_header" v-for='todo in todos'>
-						<li>
-							<img v-bind:src="todo.H_picture" class="itype">
-							<span class="username">
-								{{todo.username}}
-							</span>
-							<span class="action">
-								{{todo.action_a}}
-							</span>
-							<span class="theme">
-								{{todo.theme}}
-							</span>
-							<span class="mainpoint">
-								{{todo.mainpoint}}
-							</span>
-							<span class="emailfrom">
-								{{todo.emailfrom}}
-							</span>
-							<span class="time">
-								{{todo.time}}
-							</span>
-							<span class="m_body">
-								{{todo.m_body}}
-								<img v-bind:src="todo.body_picture" class="body_picture">
-							</span><br>
-							<img v-bind:src="todo.r_picture" class="E_picture">
-						</li>
-						<div v-if='todo.seen===true' >
+						<div v-if='todo.dayline===true' class="dayline" >
 							<div class="line1"></div>
 							<span class="line_text">Yesterday</span>
 						</div>
-						<div  v-else-if='todo.seen===false' class="line0"></div>
+						<li>
+							<img v-bind:src="todo.H_picture" class="itype">
+							<span class="username">{{todo.username}}</span>
+							<span class="action">{{todo.action_a}}</span>
+							<span class="theme">{{todo.theme}}</span>
+							<span class="mainpoint">{{todo.mainpoint}}</span>
+							<span class="emailfrom">{{todo.emailfrom}}</span>
+							<span class="time">{{todo.time}}</span>
+							<div class="m_body">
+								{{todo.m_body}}
+								<img v-bind:src="todo.body_picture" class="body_picture">
+							</div><br>
+							<img v-bind:src="todo.r_picture" class="E_picture">
+						</li>
+						<div  v-if='todo.cutline===true' class="line0"></div>
 					</ul>
 				</div>
 			</div>
 			<script src="./vue.js"></script>
 			<script type="text/javascript" src="./class1.js"></script>
-		</body>
-	</html>
+		</div>
+	</body>
+</html>

@@ -2,10 +2,10 @@
 .dialog{
 margin-top: 50px;
 margin-left: 50px;
-width: 800px;
+width: 750px;
 border: 1px solid #DEE2EA;
 font-family:"Microsoft YaHei";
-color: black;
+color: #737373;;
 }
 .header{
 border-bottom: #DEE2EA 1px solid;
@@ -30,14 +30,16 @@ float: left;
 }
 .contentarea{
 padding-left: 5px;
+color: #737373;
 }
 .C_Header{
 padding:  2px 0;
 font-weight: normal;
 color: #737373;
 }
-.username, .theme{
+.username, .theme, .emailfrom{
 font-weight: bold;
+color: #737373;
 }
 .username{
 padding-left: 5px;
@@ -47,9 +49,6 @@ color: #49ACF2;
 font-weight: bold;
 }
 .time{
-position:relative;
-padding-top: 2px;
-padding-right: 20px;
 float: right;
 margin-top: 2px;
 color: #A7A8A8;
@@ -57,9 +56,7 @@ font-size: 70%;
 }
 .m_body{
 display: block;
-padding-left: 35px;
-padding-top: 5px;
-padding-right: 150px;
+padding: 5px 150px 5px 35px;
 color: #949494;
 }
 .E_picture{
@@ -67,9 +64,6 @@ position: relative;
 margin-right: 10px;
 margin-top: -20px;
 float: right;
-}
-.emailfrom{
-font-weight: bolder;
 }
 .c_picture{
 padding-left: 10px;
@@ -82,18 +76,42 @@ padding-right: 20px;
 float:right;
 font-size: 80%;
 }
+.dayline{
+padding-bottom: 10px;
+}
 .line0{
 border-bottom:1px solid #F6F6F6;
 }
 .line1{
-display: inline-block;
-width: 670px;
+display: block;
+position: relative;
+margin-right: 60px;
 border-bottom: 1px solid #DEE2EA;
 }
 .line_text{
-position: absolute;
-padding-top: 4px;
+display: block;
+position: relative;
+margin-top: -10px;
+float: right;
 color: #49ACF2;
+}
+.dropdown{
+display: block;
+float: right;
+color: #737373;
+}
+.dropdown-content{
+display: none;
+height: 5px;
+}
+.r_header:hover .dropdown-content {
+display: block;
+}
+.dropbtn{
+text-align: right;
+border-width: 0px;
+background-color:#F4F5F8;
+color: #737373;
 }
 ul{
 list-style-type: none;
